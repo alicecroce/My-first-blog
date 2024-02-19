@@ -1,0 +1,96 @@
+/* I SELETTORI -------------------------------------------*/
+
+/* tag */
+body {
+  background-color: unset;
+}
+
+p {
+  color: green;
+}
+/* class */
+.red-text {
+  color: red;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+/* id */
+#primo-paragrafo {
+  color: grey;
+}
+
+#best-blog-caption {
+  color: slateblue;
+}
+/* PSEUSOSELETTORI -------------------------------------------*/
+#best-blog-caption:hover {
+  color: red;
+  font-size: 30px;
+}
+
+/* PARENTELE TRA PSEUSOSELETTORI -------------------------------------------*/
+
+/* i figli (child) */
+/* li:first-child {
+  color: deepskyblue;
+}
+
+li:last-child {
+  color: purple;
+}
+
+li:nth-child(2) {
+  color: orangered;
+} */
+
+/* i link (non visitato e visitato) */
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: peru;
+}
+
+/* SELETTORI AVANZATI-------------------------------------------*/
+
+/* modifica solo gli h2 dopo gli h1 */
+h1 + h2 {
+  color: purple;
+}
+/* modifica solo gli h2 imparentati con gli h1 che non fanno parte di alcun gruppo */
+h1 ~ h2 {
+  color: aqua;
+}
+/* modifica di DIRETTI discendenti li di nav-list */
+#nav-list > li {
+  color: brown;
+}
+/* modifica TUTTI i figli li di nav-list */
+#nav-list li {
+  color: blueviolet;
+}
+
+#nav-list > a {
+  color: cornflowerblue;
+}
+
+/* SELETTORI PER ATTRIBUTI-------------------------------------------*/
+
+h1[name="titolo"] {
+  color: burlywood;
+}
+/* ^ che inizia con */
+img[src^="images/"] {
+  border: 10px solid black;
+}
+/* $ che finisce con */
+img[src$=".png"] {
+  border-radius: 50%;
+}
+/* * che contengono il valore */
+img[src*="logo"] {
+  border-color: chartreuse;
+}
